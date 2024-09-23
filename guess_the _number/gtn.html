@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .userInput{
+        width: 500px;
+        height: 500px;
+        border:1px solid black;
+        margin:0 auto;
+        margin-top:70px;
+        background: linear-gradient(purple,blue,#8403fc, purple);       
+    }
+    .userInput form input{
+      position: relative;
+      left: 20%;
+      top:80px;
+      width: 18rem;
+      height: 3rem;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .userInput form #sub{
+        margin-top:30px;
+        width:18.5rem;
+        background-color: black;
+        color: white;
+    }
+    .userInput h2{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    .userInput form #in1::placeholder{
+        text-align: center;
+        font-size: 18px;
+    }
+    .userInput form #in1:focus{
+        text-align: center;
+    }
+    .userInput h1{
+       text-align: center;
+       position: relative;
+       top:70px; 
+       color: white;
+    }
+
+</style>
+<body>
+   <div class="userInput">
+    <h2>Guess the number between 1 to 10</h2>
+   <form action="">
+    <input type="number" name="" id="in1" placeholder="Enter a number" min="1" max="10"><br>
+    <input type="submit" id="sub"  value="CLICK">
+   </form>
+   <br>
+   <h1 id = "result">
+
+   </h1>
+   </div>
+    <script src="./gtn.js"></script>
+</body>
+</html>
